@@ -48,7 +48,7 @@ function switchOfPlays(perf) {
       return result;
     },
     'default' : function() {
-      throw new Error(`неизвестный тип: ${play.type}`);
+      throw new Error(`неизвестный тип: ${perf.type}`);
     }
   };
   return (plays[perf.type] || plays['default'])();
