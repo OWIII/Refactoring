@@ -7,7 +7,6 @@ function loadJson() {
     .then(response => response.json())
     .then(answer => {
       const invoice = answer[0];
-      console.log(answer[0]);
       score.textContent = statement(invoice); // Выводим на страницу, чтобы видеть результат
     });
 };
